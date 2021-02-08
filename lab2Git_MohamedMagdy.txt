@@ -1,0 +1,55 @@
+**Create a new project on your local machine then push it to your remote repo.
+$ git init
+$ git add .
+$ git commit -m "add file"
+$ git remote add origin git@github.com:NouranElshaer/lab2.git
+$ git push origin master
+
+**create two branches (dev and test) then create two files in dev branch and push this changes to remote repo.
+$ git branch dev
+$ git branch test
+$ git checkout dev
+$ touch file1.txt
+$ touch file2.txt
+$ git add -A
+$ git commit -a -m ""
+$ git push origin dev
+
+**merge this changes on main branch and then push it to your remote main branch
+$ git checkout master
+$ git merge dev
+$ git push origin master
+
+**Tell me how to remove them locally and remotly
+$ git checkout master
+Local=>
+ git branch -d test
+Remot=>
+ git push origin --delete test
+
+**Send me invitation on my mail
+rebo link => https://github.com/mohamedmagdycivily/lab2
+myMail => mohamedmagdycivily@gmail.com
+
+**create an annoted tag with tagname v1.4.
+$ git log --oneline
+$ git tag -a v1.4 420383d -m "tag added by mohamed magdy"
+$ git push origin v1.4
+
+**tell me how to list tags locally.
+$ git tag
+
+**tell me how to delete tag locally and remotely
+Local=>
+$ git tag -d v1.4
+Remot=>
+$ git push --delete origin v1.4
+
+**pull request
+$ git checkout -b newbranch
+$ git add .
+$ git commit -m "task 9 modification"
+$ git push origin newbranch
+_______________________________________________________
+
+
